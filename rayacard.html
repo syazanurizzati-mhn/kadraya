@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 16px;
+            background-image: url("b4.jpg");
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .raya-card {
+            margin: 15px auto;
+            padding: 15px;
+            max-width: 500px;
+            max-height: fit-content;
+            background-color: rgb(255, 249, 166);
+            text-align: center;
+            box-shadow: 0 24px 40px -8px yellow;
+            background-image: url("b1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .raya-card img {
+            width: 100%;
+        }
+
+        .source-link {
+            text-align: center;
+            color: #311B92;
+            text-decoration: underline;
+        }
+
+        .source-link a {
+            color: #311B92;
+            text-decoration: none;
+        }
+
+        h1{
+            font-family: monospace;
+            font-style: italic;
+            color: #093e52;
+        }
+
+        h2 {
+            font-family:serif;
+            font-style: italic;
+            color: rgb(21, 82, 151);
+        }
+
+        p {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="raya-card">
+
+        <img src="raya.JPG" alt="Raya image">
+        <h1 onmouseover="mOver(this)" onmouseout="mOut(this)">SELAMAT HARI RAYA AIDILFITRI</h1>
+        <h2>Syawal 1442 H</h2>
+        <p>Ubi kayu wat pengak,</p>
+        <p>Kepok lekor panjang sedepe</p>
+        <p>Bile pose wak2 dok ingak, </p>
+        <p>Hari raye tak dok hok lupe.</p>
+
+    </div>
+    <div class='audio-container'>
+        <audio class="audio" loop autoplay="autoplay" controls>
+            <source src="satuharidihariraya.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <script type="text/javascript">
+        function mOver(obj) {
+            obj.innerHTML = "MAAF ZAHIR DAN BATIN"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "SELAMAT HARI RAYA AIDILFITRI"
+        }
+
+    </script>
+</body>
+
+</html>
